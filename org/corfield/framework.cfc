@@ -1810,6 +1810,8 @@ component {
         getPageContext().getResponse().setStatus( statusCode );
         // set the content type header portably:
         getPageContext().getResponse().setContentType( contentType );
+        // turn off debugging
+        setting showdebugoutput = "false";
         return out;
     }
 
